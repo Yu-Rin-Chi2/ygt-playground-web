@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINEミニアプリ - QRコードリーダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon">📱</div>
+        <h1>QRコードリーダー</h1>
+        <p class="subtitle">ボタンを押してQRコードをスキャン</p>
+
+        <button id="scanButton" class="scan-button">
+            📷 QRコードをスキャン
+        </button>
+
+        <div id="status" class="status"></div>
+
+        <div id="resultArea" class="result-area">
+            <div class="result-label">スキャン結果:</div>
+            <div id="resultContent" class="result-content"></div>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <!-- LIFF SDK -->
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+
+    <!-- アプリケーションのJavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
